@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Sidebar.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <app-sidebar>
+        <div class="icon">
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h2>📬 Mail App</h2>
+        </div>
+
+        <button>✏️ Compose</button>
+
+        <app-button>
+            <slot icon="icon">📥</slot>
+            <span text="text">Inbox</span>
+        </app-button>
+
+        <app-button>
+            <slot icon="icon">⭐️</slot>
+            <span text="text">Starred</span>
+        </app-button>
+
+        <app-button>
+            <slot icon="icon">⏱</slot>
+            <span text="text">Snoozed</span>
+        </app-button>
+
+        <app-button>
+            <slot icon="icon">➡️</slot>
+            <span text="text">Sent</span>
+        </app-button>
+        
+        <app-button>
+            <slot icon="icon">📄</slot>
+            <span text="text">Drafts</span>
+        </app-button>
+
+
+    </app-sidebar>
+    <script src="script.js"></script>
+</body>
+</html>
